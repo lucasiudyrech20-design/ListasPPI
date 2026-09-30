@@ -6,31 +6,75 @@
     <title>Document</title>
 
     <style>
-        .box1{
+        .page {display: grid;
+            grid-template-areas:
+                "A A . B"
+                "C D D D";
+
+            grid-template-columns: 3fr 2fr 2fr 2fr;
+            grid-template-rows: 1fr 2fr;
+            gap: 8px;
+            width: 400px;
+            margin: 8px auto;
+        }
+
+        #A { grid-area: A;  }
+        #B { grid-area: B;  }
+        #C { grid-area: C; }
+        #D { grid-area: D;
+            display: grid;
+                grid-template-areas:
+                "E F G"
+                "M I J";
+            grid-template-columns: 60px 1fr 60px;
+            grid-template-rows: 1fr 1fr;
+
+            gap: 7px;
+
+            padding: 15px;
+        }
+        #E { grid-area: E; }
+        #F { grid-area: F; }
+        #G { grid-area: G; }
+        #M { grid-area: M; }
+        #I { grid-area: I; }
+        #J { grid-area: J; }
+
+        .box {
+            background-color: #444;
             color: white;
-            background-color: rgb(30, 31, 56);}
+            padding: 15px;
+            border-radius: 3px;
+        }
 
-        .jox1{background-color: lightgray;}
-
+        .inside {
+            background-color: #ccc;
+            color: #444;
+            padding: 15px;
+            border-radius: 4px;
+        }
     </style>
 </head>
+
 <body>
-    <div class="all">
-        <div class="box1">A</div>
-        <div class="box1">B</div>
-        <div class="box1">C</div>
-        <div class="box1">
-            <div class="jox1">D</div>
-            <div class="jox1">E</div>
-            <div class="jox2">F</div>
-            <div class="jox2">G</div>
-            <div class="jox3">H</div>
-            <div class="jox3">I</div>
+
+    <div class="page">
+
+        <div id="A" class="box">A</div>
+        <div id="B" class="box">B</div>
+        <div id="C" class="box">C</div>
+        <div id="D" class="box">
+            <div id="E" class="inside">E</div>
+            <div id="F" class="inside">F</div>
+            <div id="G" class="inside">G</div>
+            <div id="M" class="inside">M</div>
+            <div id="I" class="inside">I</div>
+            <div id="J" class="inside">J</div>
 
         </div>
 
-
     </div>
-    
+
 </body>
 </html>
+    

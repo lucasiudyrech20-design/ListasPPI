@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page {
+            width: 95%;
+            height: 90%;
+            display: flex;
+            gap: 10px;
+        }
+
+        .lateral {
+            width: 8%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+          .lateral img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+
+        .principal {
+            width: 65%;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        .principal img, .caixa img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .caixa {
+            flex: 1;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .direita {
+            width: 27%;
+            display: flex;
+            gap: 10px;
+        }
+
+
+
+
+
+      
+
+        .inferior {
+            height: 100%;
+            position: relative;
+        }
+
+        .texto {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="lateral">
+            <div class="inferior">
+                <img src="https://imgs.search.brave.com/kKNfrVfNQ29JQfkkDNG4OFOe89j9QlGd_S09z0q7pWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWVsaG9yZXNkZXN0/aW5vcy5jb20uYnIv/d3AtY29udGVudC91/cGxvYWRzLzIwMTkv/MDEvbWVsaG9yZXMt/cHJhaWFzLWRvLWJy/YXNpbC10YWlwdS1k/ZS1mb3JhLmpwZw">
+            </div>
+        </div>
+
+        <div class="principal">
+            <div class="inferior">
+                <img src="https://imgs.search.brave.com/2NYpUyFSgr1Jw3t7XD_yhSLRTZ-Mj_HiQR43pKNb5yU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTYv/MDAyLzY1MC9zbWFs/bC9zcGlyYWwtZ2Fs/YXh5LWluLWRlZXAt/c3BhY2UtcGhvdG8u/anBn">
+
+                <div class="texto">
+                    <strong>Oretmau</strong>
+                    <p>Omuke traughe o autfa</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="direita">
+
+            <div class="caixa">
+                <img src="https://imgs.search.brave.com/hDptbm_qnSbMLLUSRUlFt1YxSLCKttUDskrMkwqiZJI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3RpL2ZvdG9z/LWdyYXRpcy90Mi82/NjU5MjQyLXJhaW9z/LWRlLXNvbC1hdHJh/dmVzLWRhcy1hcnZv/cmVzLW5hLWZsb3Jl/c3RhLWZvdG8uanBn">
+            </div>
+
+            <div class="caixa">
+                <img src="https://imgs.search.brave.com/vOK6_JQz5r_uX2N9DyUCEVQ8QItLzLrGO4JoayK2YHk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tYXJr/ZXRwbGFjZS5jYW52/YS5jb20vTUFEYXBG/WWI5ak0vMS90aHVt/Ym5haWxfbGFyZ2Ut/MS9jYW52YS1tYWdu/JUMzJUFEZmljYXMt/Y2FkZWlhcy1kZS1t/b250YW5oYXMtbm8t/bWVpby1kYXMtbW9u/dGFuaGFzLXRvcm9z/LU1BRGFwRlliOWpN/LmpwZw">
+            </div>
+
+            <div class="caixa">
+                <img src="https://imgs.search.brave.com/Fn9uREIxDJUVIteYSM73RsPbm-4MZmcSqZUXQvYtYE8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMzYy/OTUwODMvcGV4ZWxz/LXBob3RvLTM2Mjk1/MDgzL2ZyZWUtcGhv/dG8tb2YtbHVhLWNy/ZXNjZW50ZS1lbS11/bS1jZXUtYXp1bC1j/bGFyby5qcGVnP2Nz/PXRpbnlzcmdiJmRw/cj0xJnc9NTAw">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
